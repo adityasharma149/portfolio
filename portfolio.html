@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="a.css" />
+  </head>
+  <body>
+    <nav id="desktop-nav">
+      <div class="logo"><h1>MYPORTFOLIO</h1></div>
+      <div>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    <nav id="hamburger-nav">
+      <div class="logo">FOLIO</div>
+      <div class="hamburger-menu">
+        <div class="hamburger-icon" onclick="toggleMenu()">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <div class="menu-links">
+          <li><a href="#about" onclick="toggleMenu()">About</a></li>
+          <li><a href="#experience" onclick="toggleMenu()">Experience</a></li>
+          <li><a href="#projects" onclick="toggleMenu()">Projects</a></li>
+          <li><a href="#contact" onclick="toggleMenu()">Contact</a></li>
+        </div>
+      </div>
+    </nav>
+    <section id="profile">
+      <div class="section__pic-container">
+        <img src="" alt="" />
+      </div>
+      <div class="section__text">
+        <p class="section_text_p1">Hello, I'm</p>
+        <h1 class="title">ADITYA SHARMA</h1>
+        <p class="section_text_p2">Web Developer</p>
+        <div class="btn-container">
+          <button
+            class="btn btn-color-2"
+            onclick="window.open('./assets/resume-example.pdf')"
+          >
+            Download CV
+          </button>
+          <!-- <button class="btn btn-color-1" onclick="location.href='./#contact'">
+            Contact Info
+          </button> -->
+        </div>
+        <div id="socials-container">
+          <img
+            src="https://imgs.search.brave.com/09QPWanPRr7d6v2U889lzku1IlaO8n9bmqYeRVW2Ma0/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9wbHVz/cG5nLmNvbS9pbWct/cG5nL2luc3RhZ3Jh/bS1wbmctaW5zdGFn/cmFtLXBuZy1waWN0/dXJlLXBuZy1pbWFn/ZS0zMDAucG5n"
+            alt="My Instagram profile"
+            class="icon"
+            onclick="location.href='https:instagram.com'">
+          <img
+            src="https://imgs.search.brave.com/2H_Ql7-9fF9ANSPi8OqOx8fLNRIvZF6m3r6jTsU6g8E/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG5z/Lmljb25tb25zdHIu/Y29tL3dwLWNvbnRl/bnQvcmVsZWFzZXMv/cHJldmlldy8yMDEy/LzI0MC9pY29ubW9u/c3RyLWxpbmtlZGlu/LTMucG5n"
+            alt="My LinkedIn profile"
+            class="icon"
+            onclick="location.href='https:https://www.linkedin.com/in/aditya-sharma-4698491b4/'"
+          />
+          <img
+            src="https://imgs.search.brave.com/63BVyFUdzRWsnIIZdGGNtbTjFtWjGGf-ouFESc6Sj0Y/rs:fit:500:0:0/g:ce/aHR0cHM6Ly90My5m/dGNkbi5uZXQvanBn/LzA0LzUyLzE4LzQ4/LzM2MF9GXzQ1MjE4/NDg1OF9pWlhmSTFo/MkJkS0I1aTljRHdw/dTlVZTFpbDhNeHhm/cS5qcGc"
+            alt="My Github profile"
+            class="icon"
+            onclick="location.href='https://github.com/'"
+          />
+        </div>
+      </div>
+    </section>
+    <section id="about">
+      <p class="section_text_p1">Get To Know More</p>
+      <h1 class="title">About Me</h1>
+      <div class="section-container">
+        <div class="section__pic-container">
+          <img
+            src="./adi.png"
+            alt="Profile picture"
+            class="about-pic"
+          />
+        </div>
+        <div class="about-details-container">
+          <div class="about-containers">
+            <div class="details-container">
+              <img
+                src="https://imgs.search.brave.com/V4huXne23Alyi8m820nAtHUj1dVwhoQTQ4ljamxll_E/rs:fit:500:0:0/g:ce/aHR0cDovL2NsaXBh/cnRzLmNvL2NsaXBh/cnRzL0xUZC9kZEcv/TFRkZGRHUlQ0Lmpw/Zw"
+                alt="Experience icon"
+                class="icon"
+              />
+              <h3>Experience</h3>
+              <p>Frontend Developer <br />Graphic Designer <br />Photographer</p>
+            </div>
+            <div class="details-container">
+              <img
+                src="https://imgs.search.brave.com/4pF_ENgkiKBVYq7NrbwxM-pHB147IPbda6RkEWpAnYI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/Y3JlYXRlLnZpc3Rh/LmNvbS9hcGkvbWVk/aWEvc21hbGwvMTA2/NDM2NTQvc3RvY2st/cGhvdG8tZWR1Y2F0/aW9uLW9ubGluZQ.jpeg"
+                alt="Education icon"
+                class="icon"
+              />
+              <h3>Education</h3>
+              <p>Chitkara University <br />Modern Public School</p>
+            </div>
+          </div>
+          <div class="text-container">
+            <p>
+                An innovative Frontend Developer who transforms complex tasks into intuitive, accessible, and easy-to-use designs for users around the world, always pushing the boundaries of what is possible on the web
+            </p>
+          </div>
+        </div>
+      </div>
+      <img
+        src="./assets/arrow.png"
+        alt="Arrow icon"
+        class="icon arrow"
+        onclick="location.href='./#experience'"
+      />
+    </section>
+    <section id="experience">
+      <p class="section_text_p1">Explore My</p>
+      <h1 class="title">Experience</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container">
+            <h2 class="experience-sub-title">Frontend Development</h2>
+            <div class="article-container">
+    </section>
+    <section id="projects">
+      <p class="section_text_p1">Browse My Recent</p>
+      <h1 class="title">Projects</h1>
+      <div class="experience-details-container">
+        <div class="about-containers">
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://imgs.search.brave.com/KxEFk276CyyBDwgLf0cHNdTE1bOSmrOygngs3E3iPT4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzQyNDYw/L3NjcmVlbnNob3Rz/LzUzNzQzMjgvbWVk/aWEvNmNlZjYwNmYx/ZjE0M2I3YWYxNjYw/ZGEwZTI0MzkxYWIu/Z2lmP3Jlc2l6ZT00/MDB4MzAwJnZlcnRp/Y2FsPWNlbnRlcg.jpeg"
+                alt="Project 1"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project One</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://imgs.search.brave.com/KxEFk276CyyBDwgLf0cHNdTE1bOSmrOygngs3E3iPT4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzQyNDYw/L3NjcmVlbnNob3Rz/LzUzNzQzMjgvbWVk/aWEvNmNlZjYwNmYx/ZjE0M2I3YWYxNjYw/ZGEwZTI0MzkxYWIu/Z2lmP3Jlc2l6ZT00/MDB4MzAwJnZlcnRp/Y2FsPWNlbnRlcg.jpeg"
+                alt="Project 2"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Two</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+            </div>
+          </div>
+          <div class="details-container color-container">
+            <div class="article-container">
+              <img
+                src="https://imgs.search.brave.com/KxEFk276CyyBDwgLf0cHNdTE1bOSmrOygngs3E3iPT4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG4u/ZHJpYmJibGUuY29t/L3VzZXJzLzQyNDYw/L3NjcmVlbnNob3Rz/LzUzNzQzMjgvbWVk/aWEvNmNlZjYwNmYx/ZjE0M2I3YWYxNjYw/ZGEwZTI0MzkxYWIu/Z2lmP3Jlc2l6ZT00/MDB4MzAwJnZlcnRp/Y2FsPWNlbnRlcg.jpeg"
+                alt="Project 3"
+                class="project-img"
+              />
+            </div>
+            <h2 class="experience-sub-title project-title">Project Three</h2>
+            <div class="btn-container">
+              <button
+                class="btn btn-color-2 project-btn"
+                onclick="location.href='https://github.com/'"
+              >
+                Github
+              </button>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section id="contact">
+      <p class="section_text_p1">Get in Touch</p>
+      <h1 class="title">Contact Me</h1>
+      <div class="contact-info-upper-container">
+        <div class="contact-info-container">
+          <img
+            src="https://imgs.search.brave.com/mqTKZyhJeZU8sFb3-M3WuWPs5D5Y_u4Yz0PC2Y1qpHI/rs:fit:500:0:0/g:ce/aHR0cHM6Ly93d3cu/ZWRpZ2l0YWxhZ2Vu/Y3kuY29tLmF1L3dw/LWNvbnRlbnQvdXBs/b2Fkcy9uZXctSW5z/dGFncmFtLWxvZ28t/cG5nLWZ1bGwtY29s/b3VyLWdseXBoLW1l/ZGl1bS1zaXplLTQ1/MC1waXhlbHMucG5n"
+            alt="Instagram icon"
+            class="icon contact-icon"/>
+            <p><a href="https://www.instagram.com/accounts/onetap/?next=%2F">Instagram</a></p>
+          <img
+            src="https://imgs.search.brave.com/rzHwyvlZ5vvdefnWOeHa1bSDIwBYdDJmaay6pBOb9u4/rs:fit:500:0:0/g:ce/aHR0cHM6Ly91cGxv/YWQud2lraW1lZGlh/Lm9yZy93aWtpcGVk/aWEvY29tbW9ucy83/LzdlL0dtYWlsX2lj/b25fKDIwMjApLnN2/Zw.svg"
+            alt="Email icon"
+            class="icon contact-icon email-icon"
+          />
+          <p><a href="mailto:examplemail@gmail.com">aditya4by4@gmail.com</a></p>
+        </div>
+        <div class="contact-info-container">
+          <img
+            src="https://imgs.search.brave.com/2H_Ql7-9fF9ANSPi8OqOx8fLNRIvZF6m3r6jTsU6g8E/rs:fit:500:0:0/g:ce/aHR0cHM6Ly9jZG5z/Lmljb25tb25zdHIu/Y29tL3dwLWNvbnRl/bnQvcmVsZWFzZXMv/cHJldmlldy8yMDEy/LzI0MC9pY29ubW9u/c3RyLWxpbmtlZGlu/LTMucG5n"
+            alt="LinkedIn icon"
+            class="icon contact-icon"
+          />
+          <p><a href="https://www.linkedin.com/in/aditya-sharma-4698491b4/">LinkedIn</a></p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Copyright &#169; 2024 Adityasharma. All Rights Reserved.</p>
+    </footer>
+    <script src="script.js"></script>
+  </body>
+</html>
